@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK40D86VVW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FK40D86VVW');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Charm&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>FinBilim Jobs</title>
+    <style>
+        html,
+        body {
+            background-image: linear-gradient(30deg, rgb(9, 1, 58), rgb(4, 89, 72));
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .onboard {
+            background-image: url("deskview1.webp");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            box-shadow: inset 0px 30vh 1000px rgba(0, 0, 0, 0.9);
+            height: 100%;
+
+            text-align: center;
+        }
+
+        .onboard h1 {
+            color: #FFF;
+            font-family: 'Roboto', arial;
+            letter-spacing: 2px;
+            font-size: 40px;
+            line-height: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: 0.5s h1anim forwards;
+
+            opacity: 0;
+        }
+
+        @keyframes h1anim {
+            0% {
+                opacity: 0;
+                margin-left: 50px;
+                transform: rotate(3deg)scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .onboard h1 img {
+            width: 200px;
+        }
+
+        .onboard p {
+            color: #474747;
+            line-height: 25px;
+            font-size: 16px;
+            margin: 0 auto;
+            font-family: "Noto Sans", arial;
+        }
+
+        .onboard span {
+            border: 0px solid transparent;
+            border-left: 5px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 7px solid rgba(1, 1, 1, 0.2);
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 3px;
+            font-size: 30px;
+            padding: 2px 10px 2px 10px;
+            font-family: "Charm", arial;
+            transform: scale(1, 0.89);
+            letter-spacing: 2px;
+            background: rgba(255, 255, 255, 1);
+            margin-left: 5px;
+            color: rgb(0, 0, 0);
+        }
+
+        .onboard h2 {
+            color: #FFF;
+            font-family: 'Roboto', arial;
+        }
+
+        #abstractman1 {
+            width: 200px;
+            position: fixed;
+            opacity: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: showup 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes showup {
+            0% {
+                opacity: 0;
+                bottom: -40px;
+            }
+
+            100% {
+                opacity: 1;
+                bottom: 0px;
+            }
+        }
+
+        button {
+            background-color: rgb(5, 85, 235);
+            padding: 0 26px;
+            height: 46px;
+            line-height: 36px;
+            border-radius: 80px;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+            border: none;
+            color: #FFF;
+            font-family: arial;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: "Roboto", arial;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: rgb(4, 62, 156);
+        }
+
+        button:focus {
+            outline: 2px dashed rgba(0, 0, 0, 0.8);
+            background-color: rgb(87, 148, 245);
+        }
+
+        .dictionary-entry {
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px -40px 100px rgba(66, 114, 247, 0.7);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            text-align: center;
+            position: fixed;
+            animation: 0.5s showup forwards;
+            animation-delay: 1s;
+            opacity: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-family: "Noto Sans", arial;
+        }
+
+        .word {
+            font-size: 24px;
+            font-weight: bold;
+            color: dodgerblue;
+        }
+
+        .pronunciation {
+            color: #c8c8c8;
+            font-style: italic;
+        }
+
+        .definition {
+            margin-top: 10px;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+        }
+
+        .etymology {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #c2c2c2;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            animation: osci 1s forwards;
+            animation-delay: 0.7s;
+        }
+
+        @keyframes osci {
+            0% {
+                opacity: 0;
+                top: -40px;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .social-buttons .button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 6px;
+            border-radius: 0px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: "Roboto", arial;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .social-buttons .button svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .linkedin {
+            background: #026397;
+        }
+
+        .instagram {
+            background: #833ab4;
+            background: linear-gradient(to bottom right,
+                    #833ab4, #fd1d1d, #fcb045);
+        }
+
+        .email {
+            background: #757677;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 0 auto;
+            box-shadow: inset 0px 10px 20px rgba(7, 95, 248, 0.5);
+            animation: cardanim 1s forwards;
+            animation-delay: 0.5s;
+            opacity: 0;
+
+        }
+
+        @keyframes cardanim {
+            0% {
+                opacity: 0;
+
+                transform: translate(0, 35px)scale(0.8)rotate(-3deg);
+                ;
+            }
+
+            100% {
+                opacity: 1;
+                margin: 0 auto;
+                transform: scale(1)rotate(0);
+            }
+        }
+        a{
+            font-family: "Roboto",arial;
+            color:rgb(0, 98, 255);
+            text-decoration: none;
+            border-bottom: 1.5px solid rgb(0, 98, 255);
+        }
+        a:hover {
+            color:rgb(5, 56, 138);
+            border-bottom: 1.5px solid rgb(0, 42, 111);
+        }
+        a:active {
+            outline: 1px dashed rgb(5,56,138);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scene onboard">
+        <div style="padding: 40px 40px;">
+            <h1>
+                <img src="logo-dark.svg"><span>Careers</span>
+            </h1>
+            <div class="dictionary-entry">
+                <div class="word">Bilim</div>
+                <div class="pronunciation">/biː-lim/
+                    билим
+                    білім
+                </div>
+                <div class="definition">noun. Knowledge</div>
+                <div class="etymology">Proto-Turkic origin: <b>bilim</b> (<b>knowledge</b>)</div>
+            </div>
+            <div class="card">
+                <p>Calling all ambitious high schoolers!<br /><br />Do you have a passion for <b>finance</b>,
+                    <b>technology</b>, or <b>entrepreneurship</b>?<br /><br/>This is your chance to join the 2026-2027 Executive Team and become part of history as we build Central Asia's premier student-led organization.<br/><br/>Applications will close August 15, 2025.</p>
+                <div style="display:block;margin-top:20px;">
+                    <a href="join.html"><button>Apply Now</button></a>
+                </div>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/company/finbilim/" target="_blank" class="button linkedin">
+                    <!-- LinkedIn SVG -->
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5C1.11 6 0 4.881 0 3.5S1.11 1 2.5 1 4.98 2.119 4.98 3.5zM0 8h5V24H0V8zm7.5 0h4.78v2.7h.07c.67-1.27 2.31-2.7 4.75-2.7 5.08 0 6.02 3.34 6.02 7.69V24h-5v-7.55c0-1.8-.03-4.12-2.51-4.12-2.51 0-2.9 1.96-2.9 3.99V24h-5V8z" />
+                    </svg>
+                    LinkedIn
+                </a>
+
+                <a href="https://www.instagram.com/finbilim.asia" target="_blank" class="button instagram">
+                    <!-- Instagram SVG -->
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.75-2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" />
+                    </svg>
+                    Instagram
+                </a>
+
+                <a href="mailto:eldiiarbekbolotov@gmail.com" class="button email">
+                    <!-- Email SVG -->
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene">
+        <img id="abstractman1" src="abstractman1.webp">
+    </div>
+
+    <script>
+        function route(index) {
+            for (var i = 0; i < document.getElementsByClassName("scene").length; i++) {
+                document.getElementsByClassName("scene")[i].style.display = "none";
+            }
+            document.getElementsByClassName("scene")[index].style.display = "block";
+        }
+        route(0);
+    </script>
+</body>
+
+</html>

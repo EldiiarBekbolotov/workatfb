@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<!---------Are you a developer in high school? Applications are now open!--------------
+ 
+    FinBilim Careers
+
+    https://finbilim.com
+
+    (c) 2025 All code by Eldiiar Bekbolotov 
+-->
+<html lang='en' class='no-js' translate="no">
+
+<!-- Head: Metadata, Fonts, Stylesheet -->
+
+<head>
+    <!-- Google tag (gtag.js) FinBilim -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK40D86VVW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FK40D86VVW');
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+
+    <!-- A good practice to include: meta description for SEO purposes -->
+    <meta name="description" content="FinBilim Careers">
+
+    <!-- Webpage Title  -->
+    <title>Careers @ FinBilim</title>
+
+    <!-- Link to a CSS file that resets default browser styles, which ensures consistent rendering across different browsers  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+
+    <!-- Meta tag to ensure the website scales the same across all devices for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Google Material Icons, a library of icons for use in the webpage -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Preconnect to the Google Fonts API to improve loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Preconnect to the Google Fonts API's static assets (like font files) to improve loading performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to Google Fonts (IBM Plex Mono, IBM Plex Sans) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700;900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Google+Sans&display=swap"
+        rel="stylesheet">
+
+    <<!-- data.js -->
+        <script src="data.js"></script>>
+
+        <!-- styles.css -->
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<!-- Body: HTML and JavaScript -->
+
+<body>
+    <!-- Preloader while page is being loaded (real!)  -->
+    <div class='preloader'>
+        <!-- Animation -->
+        <div class="loader">
+
+        </div>
+        <!-- Fallback text if loader cannot be displayed (older browsers, IE 9 and below) -->
+        <div class="fallback-text" style="display: none;">Loading...</div>
+    </div>
+
+    <div id='everything'>
+        <!-- Sidenav Overlay -->
+        <div id="overlay"></div>
+
+        <!-- Navigation bar (fixed, top) -->
+
+        <nav>
+            <!-- Menu icon -->
+            <a href="javascript: openMenu();" class="nav-cc">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <!-- Team Logo, also activates easter egg -->
+            <div class='logo open-modal-btn' data-modal='modal5'>
+              
+                <img src="/logo-light.svg" alt="FinBilim Careers" style="width: 120px;vertical-align: middle;">
+            </div>
+        </nav>
+
+        <!-- Sidenavigation (fixed, left) -->
+
+        <div id="menu">
+            <!-- Quote -->
+            <div class="sb-head">
+                <p style="font-size: 13px;" id='quote'></p>
+            </div>
+
+            <br>
+
+            <!-- Main links -->
+            <a href="#" class="menu-link" onclick="closeMenu();goTo(0);">
+                <i class="material-icons">folder</i> <span>Home</span>
+            </a>
+            <a href="#" class="menu-link" onclick="closeMenu();goTo(1);">
+                <i class="material-icons">assignment_ind</i> <span>Apply Now</span>
+            </a>
+            <a href="#" class="menu-link" onclick="closeMenu();goTo(2);">
+                <i class="material-icons">event</i> <span>Application Process</span>
+            </a>
+            <a href="#" class="menu-link" onclick="closeMenu();goTo(3);">
+                <i class="material-icons">loyalty</i> <span>Benefits</span>
+            </a>
+            <a href="#" class="menu-link" onclick="closeMenu();goTo(4);">
+                <i class="material-icons">info</i> <span>FAQs</span>
+            </a> <a href="#" class="menu-link" onclick="closeMenu();goTo(5);">
+                <i class="material-icons">email</i> <span>Contact</span>
+            </a>
+
+        </div>
+
+        <!-- makes up for fixed navbar -->
+        <div style='height:50px;'></div>
+
+        <!-- Homepage -->
+        <div class='scene'>
+            <div class='text-center p-b-5 p-l-4 p-r-4 p-t-5' style='position:relative;'>
+                <div style="max-width: 600px;position:relative;left:50%;transform:translateX(-50%);">
+                    <h1 class='fade hdr'>Choose excellence. Lead a <span class='highlight'
+                            style="font-weight:700;">movement.</span></h1>
+
+
+
+                    <p class='fade' style="font-size:20px;"><a href='https://finbilim.com' target='_blank'>FinBilim</a>
+                        is opening
+                        <b>executive team</b> applications!
+                    </p>
+
+                    <p class='fade'>Join the 2026-2027 Executive Team and become part of history as we build the premier
+                        student-led financial literacy organization.</p>
+
+                    <div class='fade'>
+                        <button class='btn-primary ' onclick='goTo(1);'>Apply Now <i
+                                class='material-icons'>arrow_forward</i></button>
+
+                    </div>
+
+                    <div class='fade notif'>
+                        <div class='notif-content'>
+                            <i class='material-icons'>event_available</i>
+
+                            <span id='notif'>Loading info...</span>
+                        </div>
+                        <div class='notif-link'>
+                            <!-- <a href='https://www.khanacademy.org/computer-programming/the-coding-olympics-2024/6446070763012096' target='_blank'>Enter <i class='material-icons'>timer</i>
+                        </a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='bg' style='background-image:url("deskview1.jpg");'>
+                <!-- 
+                From now on, you will see the inline CSS in this format since it is more readable and neat. 
+                Inline CSS is necessary in large projects to keep the load speed fast and the main CSS file from getting too large.
+                -->
+                <h1 class='fade'><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>language</i><br>Global Impact</h1>
+                <p class='fade' style="color:white;text-shadow:0px 3px 5px rgba(0,0,0,0.2);padding:0 20px;">From small towns in Central Asia to big cities in North America, FinBilim is changing the way youth learn about money.
+                </p>
+                <div class='fade'>
+                    <button class='btn-secondary' onclick='goTo(2);'>Benefits <i
+                            class='material-icons'>arrow_forward</i></button>
+
+                </div>
+            </div>
+            <div class='p-t-5 p-l-4 p-r-4 p-b-5 text-center'>
+                <h1 class='fade'>"FinBilim is increasing financial literacy rates in critical areas using methods the world has never seen before."</h1>
+
+                <img src="https://openscope.netlify.app/src/assets/images/eldiiar.png" alt="Eldiiar Bekbolotov" style="border:2px solid green;border-radius: 50%;width: 200px;height: 200px;">
+               
+
+                <p class='fade'><a
+                        href='https://linkedin.com/in/eldiiar'
+                        target='_blank'>Eldiiar Bekbolotov</a>, Founder</p>
+
+                <img src="https://finbilim.com/assets/FinBilimFinTechHackathon2025Promo-DWE5AgkD.jpeg" alt="FinBilim FinTech Hackathon 2025" style="width: 100%;max-width:600px;height: 100%;border-radius: 30px;">
+                    <p><i>In-Person Stage at the FinBilim FinTech Hackathon 2025 <br>(Bishkek, Kyrgyzstan)</i></p>
+                </div>
+            </div>
+            <div class='bg' style='background-image:url("bg5.webp");display:none;'>
+                <h1 class='fade'><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>military_tech</i><br>All Coders Welcome</h1>
+                <p class='fade'>We are a team for everyone!
+                </p>
+                <div class='fade'>
+                    <button class='btn-secondary' onclick='goTo(4);'>About <i
+                            class='material-icons'>arrow_forward</i></button>
+
+                </div>
+            </div>
+
+         
+
+
+        </div>
+
+        <!-- projects -->
+        <div class='scene'>
+            <div class=' bg' style='
+            background-image:url("deskview1.webp");
+            background-position:bottom;'>
+                <h1 class='fade'><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>assignment_ind</i><br>Apply Now</h1>
+                <p class='fade'>Find and apply to available positions at FinBilim.
+                </p>
+            </div>
+
+            <div class='p-t-5 p-l-4 p-r-4 p-b-5' style='
+            border-bottom: 1px solid gainsboro;
+            border-radius:0px;
+            padding-bottom:30px;text-align:center;'>
+                <div style='text-align:left; max-width: 1000px; margin: 0 auto;'>
+                    <h1 class='fade'><span class='highlight'>Available Positions</span></h1>
+                    <p class='fade'>Learn more about the application process <a href="javascript:goTo(2)">here</a>.</p>
+
+                    <div class="form-control" style="opacity: 0;pointer-events:none;">
+                        <input type="text" id="searchInput" oninput="displayProjects();" required='' autocomplete="off">
+                        <label class='form-d' data-text='Search by title...'>
+                        </label>
+                    </div>
+
+                    <div id='projects'></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- info -->
+        <div class='scene'>
+
+            <div class='bg' style='
+            background-image:url("bg2.webp");
+            background-position:bottom;'>
+                <h1 class='fade'><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>event</i><br>Application Process</h1>
+
+                <p class='fade'>Everything you need to know about applying to FinBilim.
+                </p>
+            </div>
+            <div class='p-t-5 p-l-4 p-r-4 p-b-5' style='
+            border-bottom: 1px solid gainsboro;
+            border-radius:0px;
+            padding-bottom:30px;text-align:center;'>
+                <div style='text-align:left;max-width: 1000px;margin: 0 auto;
+'>
+                    <h1 class='fade'><span class='highlight'>Step-by-step application process</span></h1>
+
+                    <p class='fade'></p>
+                    <div id='events'></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- team -->
+        <div class='scene'>
+            <div class=' bg' style='
+            background-image:url("bg.webp");
+            background-position: center 0px;'>
+                <h1 class='fade'><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>loyalty</i><br>Benefits</h1>
+                <p class='fade'>
+                </p>
+            </div>
+
+
+            <div class='p-t-5 p-l-4 p-r-4 p-b-5' style='
+            border-bottom: 1px solid gainsboro;
+            border-radius:0px;
+            padding-bottom:30px;'>
+                <h1 style="text-align:center;font-weight:600;">We strive to
+                    provide you with a world-class benefits experience</h1>
+                <h3 style="text-align:center;font-weight:400;">Join the founding team, help shape our future, and get
+                    exclusive benefits!</h3>
+                <section class="benefits-grid">
+                    <div class="benefit-card tint-1">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-1">
+                                <span class="material-icons">language</span>
+                            </div>
+                            <h2>Impact Millions Globally</h2>
+                            <p>Contribute to projects that reach and inspire people worldwide from wherever you are.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-2">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-2">
+                                <span class="material-icons">psychology</span>
+                            </div>
+                            <h2>Personal and Professional Growth</h2>
+                            <p>Gain real-world skills by solving professional challenges and get access to our
+                                internship experience projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-3">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-3">
+                                <span class="material-icons">groups</span>
+                            </div>
+                            <h2>World-Class Network</h2>
+                            <p>Work alongside exceptional students and connect directly with leaders in finance,
+                                technology, and education.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-4">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-4">
+                                <span class="material-icons">volunteer_activism</span>
+                            </div>
+                            <h2>Recognized Service</h2>
+                            <p>Receive volunteer hours based on your contributions.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="benefit-card tint-6">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-6">
+                                <span class="material-icons">workspace_premium</span>
+                            </div>
+                            <h2>Trusted Recommendations</h2>
+                            <p>Earn letters of recommendation from respected figures who know your work and your impact.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-5">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-5">
+                                <span class="material-icons">verified</span>
+                            </div>
+                            <h2>Proven Achievement</h2>
+                            <p>Build a record of results that will stand out to top universities and employers around
+                                the world.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-1">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-1">
+                                <span class="material-icons">public</span>
+                            </div>
+                            <h2>Shape the Future</h2>
+                            <p>Design solutions that influence how the next generation learns about money, from rural
+                                villages to global capitals.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-2">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-2">
+                                <span class="material-icons">lightbulb</span>
+                            </div>
+                            <h2>Lead Innovation</h2>
+                            <p>Work on projects that pioneer new ways to teach and apply financial skills in the real
+                                world.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-4">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-4">
+                                <span class="material-icons">rocket_launch</span>
+                            </div>
+                            <h2>Accelerate Your Career</h2>
+                            <p>Build a portfolio of high-impact work that opens doors to top universities, internships,
+                                and global opportunities.</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="benefit-card tint-10">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-1">
+                                <span class="material-icons">diversity_1</span>
+                            </div>
+                            <h2>Roles for Every Talent</h2>
+                            <p>We offer a comprehensive range of positions that cater to a wide variety of skills and
+                                interests.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-12">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-3">
+                                <span class="material-icons">engineering</span>
+                            </div>
+                            <h2>Build Real Solutions</h2>
+                            <p>Design and implement projects that solve real challenges and deliver measurable results.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card tint-13">
+                        <div class="card-content">
+                            <div class="benefit-icon icon-4">
+                                <span class="material-icons">group_work</span>
+                            </div>
+                            <h2>Join a Community of Doers</h2>
+                            <p>Work alongside passionate, action-oriented peers who push each other to excel every day.
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+                <div style="text-align:center;">
+                    <img src="gift.webp" width="200" alt="Gift box">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- about -->
+        <div class='scene'>
+            <div class=' bg' style='
+            background-image:url("bg1.webp");
+            background-position: center 0px;
+            box-shadow:inset -1000px -1000px 0px rgba(4, 29, 93, 0.7);
+            color:var(--primary);'>
+                <h1 class='fade' style="padding-top:30px;"><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>live_help</i><br>Frequently Asked Questions</h1>
+
+                <button class='btn-secondary open-modal-btn' data-modal='modal3'>Read Now</button>
+
+            </div>
+
+            <div class=' bg' style='background-image:url("bg7.webp");
+            background-position: center 0px;
+            box-shadow:inset -1000px -1000px 0px rgba(0, 123, 255, 0.7);
+            color:#000;'>
+                <h1 class='fade' style="padding-top:30px;"><i class='material-icons' style='
+                color:#000;
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>info</i><br>About FinBilim</h1>
+
+                <button class='btn-secondary btn-black open-modal-btn' data-modal='modal4'>Read Now</button>
+            </div>
+
+        </div>
+
+        <!-- standings -->
+        <div class='scene'>
+            <div class=' bg' style='
+            background-image:url("bg2.webp");
+            background-position: center 0px;height:80vh;'>
+                <h1 class='fade'><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);margin-top:10vh;
+                font-size:100px;'>email</i><br>Contact Us</h1>
+                <hr />
+                <h3 style="color:white;">Have questions concerning FinBilim Careers?</h3>
+                <p>Please connect with and message <a href="https://linkedin.com/in/eldiiar" class="plain"
+                        style="color:white;">Eldiiar Bekbolotov</a> via LinkedIn</p>
+            </div>
+
+            <div class='p-t-5 p-l-4 p-r-4 p-b-5' style='
+            border-bottom: 1px solid gainsboro;
+            border-radius:0px;
+            padding-bottom:30px;display:none;'>
+
+                <div id='podium' style="display:none;"></div>
+            </div>
+        </div>
+
+
+
+        <!-- All Modals in Website -->
+
+        <!-- modal1 - Subscribe -->
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <div class="bg1">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <h1>Subscribe</h1>
+                <p>To subscribe, you need to scroll down to the Tips & Thanks of this program on Khan Academy and post a
+                    single dot (.) inside the <b>Subscribe Thread</b>. You will get notified when we release interesting
+                    programs or have something important to share.<br><br><a
+                        href='https://www.khanacademy.org/computer-programming/team-bug-bashers/5072233106423808?qa_expand_key=ag5zfmtoYW4tYWNhZGVteXJACxIIVXNlckRhdGEiHWthaWRfNTUzNjU2NDc5MjU4ODc5NjIyMzM5Mjc2DAsSCEZlZWRiYWNrGICAm9SV2K0JDA&qa_expand_type=comment'
+                        target='_blank'><button class='btn-secondary'>Subscribe Thread Link</button></a><br><br>Note:
+                    There is no back-end subscription system in this homepage because TCO is a Khan Academy competition
+                    and the Khan Academy Computer Programming environment only supports front-end projects.</p>
+            </div>
+        </div>
+        <!-- modal2 - Feedback -->
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <div class="bg1">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <h1>Feedback</h1>
+                <p>To share your feedback, you need to scroll down to the Tips & Thanks of this program on Khan Academy
+                    and post a comment in the <b>Feedback Thread</b>.<br><br><a
+                        href='https://www.khanacademy.org/computer-programming/team-bug-bashers/5072233106423808?qa_expand_key=ag5zfmtoYW4tYWNhZGVteXJACxIIVXNlckRhdGEiHWthaWRfNTUzNjU2NDc5MjU4ODc5NjIyMzM5Mjc2DAsSCEZlZWRiYWNrGICAm_SZ1IQIDA&qa_expand_type=comment'
+                        target='_blank'><button class='btn-secondary'>Feedback Thread Link</button></a><br><br>Note:
+                    There is no back-end feedback system in this homepage because TCO is a Khan Academy competition and
+                    the Khan Academy Computer Programming environment only supports front-end projects.</p>
+            </div>
+        </div>
+        <!-- modal3 - About team FinBilim -->
+        <div class="modal" id="modal3">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <div class="bg1">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <section class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-container">
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Who can work at FinBilim?</span>
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Ambitious high school students who can communicate fluently in English. You can join
+                                    from any country as long as you meet these criteria.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Are opportunities paid or volunteer?</span>
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>FinBilim is a volunteer-led organization. Some future opportunities may be paid. See
+                                    our <a href="javascript:goTo(3);">Benefits page</a> for details.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Do I need to be in a specific country?</span>
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No. FinBilim is open to students worldwide.</p>
+                            </div>
+                        </div>
+
+                     
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How much time commitment is expected?</span>
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We expect approximately 3 hours per week, but we are flexible depending on the
+                                    position.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>I have a different question</span>
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Please visit our <a href="javascript:goTo(5);">Contact page</a> to get in touch with
+                                    us directly.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <style>
+                    .faq-section {
+                        max-width: 900px;
+                        margin: auto;
+                        padding: 60px 20px 100px;
+                    }
+
+                    .faq-section h2 {
+                        font-family: 'Playfair Display', serif;
+                        font-size: 2rem;
+                        margin-bottom: 30px;
+                        text-align: center;
+                        color: #0f172a;
+                    }
+
+                    .faq-container {
+                        border-top: 1px solid rgba(0, 0, 0, 0.05);
+                    }
+
+                    .faq-item {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                    }
+
+                    .faq-question {
+                        background: none;
+                        border: none;
+                        width: 100%;
+                        padding: 18px 0;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        text-align: left;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+                        color: #0f172a;
+                    }
+
+                    .faq-answer {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.35s ease, padding 0.35s ease;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                    .faq-answer p {
+                        margin: 0;
+                        padding: 0 0 18px;
+                        color: #475569;
+                        line-height: 1.6;
+                    }
+
+                    .faq-answer a {
+                        color: #2563eb;
+                        text-decoration: none;
+                    }
+
+                    .faq-answer a:hover {
+                        text-decoration: underline;
+                    }
+
+                    .faq-item.active .faq-answer {
+                        max-height: 300px;
+                        padding-top: 0;
+                    }
+
+                    .faq-item.active .faq-question .material-icons {
+                        transform: rotate(180deg);
+                        transition: transform 0.3s ease;
+                    }
+
+                    .faq-question .material-icons {
+                        transition: transform 0.3s ease;
+                    }
+                </style>
+
+                <script>
+                    document.querySelectorAll('.faq-question').forEach(button => {
+                        button.addEventListener('click', () => {
+                            const item = button.parentElement;
+                            item.classList.toggle('active');
+                        });
+                    });
+                </script>
+
+            </div>
+        </div>
+
+        <!-- modal4 - About this site -->
+        <div class="modal" id="modal4">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <div class="bg1">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <h1>About FinBilim</h1>
+                <p>FinBilim is a global financial literacy initiative originating in Kyrgyzstan, with the prototurkic
+                    word "Bilim" meaning knowledge.</p>
+                <a href='https://finbilim.com' target='_blank'><button class='btn-secondary'>Visit
+                        FinBilim.com</button></a>
+            </div>
+        </div>
+
+        <!--  modal5 - easter egg  -->
+        <div class="modal" id="modal5">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <div class="bg1">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <h1 class='no-select'>Go back to FinBilim.com <i class='material-icons'>home</i></h1>
+                <h2>You will be leaving FinBilim Careers and will be entering the official FinBilim website.</h2>
+                <a href="https://finbilim.com"><button class="btn-secondary">Go
+                        Back</button></a>
+            </div>
+        </div>
+
+        <!-- footer (responsive) -->
+        <footer>
+            <h1 class=' fade log'><img src="logo-dark.svg"><span style="margin-left:5px;">Careers</span></h1>
+            <div class='fade'>
+                <div id='hex-container'>
+
+                    <div class='hex no-select ' onclick='goTo(0);'>
+                        <i class='material-icons'>folder</i>
+                        <span>Home</span>
+                    </div>
+
+                    <div class='hex no-select ' onclick='goTo(1);'>
+                        <i class='material-icons'>assignment_ind</i>
+                        <span>Apply</span>
+                    </div>
+
+                    <div class='hex no-select  ' onclick='goTo(2);'>
+                        <i class='material-icons'>event</i>
+                        <span>Process</span>
+                    </div>
+
+                    <div class='hex no-select ' onclick='goTo(3);'>
+                        <i class='material-icons'>loyalty</i>
+                        <span>Benefits</span>
+                    </div>
+
+                    <div class='hex no-select ' onclick='goTo(4);'>
+                        <i class='material-icons'>info</i>
+                        <span>FAQs</span>
+                    </div>
+
+                    <a href="https://www.linkedin.com/company/finbilim/" target="_blank" class="ultraplain">
+                        <div class='hex no-select' style="pointer-events:none;">
+                            <i class='material-icons'>open_in_new</i>
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+
+                </div>
+                <div id='copyright-text'>
+                    <p>
+                        © <span id='currYear'></span> by <a href='https://finbilim.com' target='_blank' class='plain'
+                            style='color:var(--primary);'>FinBilim</a>
+                    </p>
+                    <a href='#!' onclick='window.scroll(0,0);' class='plain' style='color:var(--primary)'>Back to
+                        Top</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- team -->
+    <div class='scene' style="visibility:hidden;">
+        <div class=' bg' style='
+            background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/29/My_own_Buckfast_breeder_B02_from_2013._Photo_taken_2015.jpg");
+            background-position: center 0px;'>
+            <h1 class='fade'><i class='material-icons' style='
+                color:var(--primary);
+                text-shadow:0px 3px 5px rgba(0,0,0,0.2);
+                font-size:100px;'>people</i><br>Team Members</h1>
+            <p class='fade'>Meet the Bug Bashers! Click the headers to sort.
+            </p>
+        </div>
+        <div class='container'>
+            <p class='fade' style='
+                display:flex;
+                justify-content:space-between;'><span id='total-members'></span><span id='current-sort'>Current sort:
+                    None</span></p>
+        </div>
+        <div class="header fade">
+            <button id="sort-name" class="sort-button" data-sort="name">Sort by Name</button>
+            <button id="sort-level" class="sort-button" data-sort="level">Sort by Level</button>
+            <button id="sort-points" class="sort-button" data-sort="points">Sort by Points</button>
+        </div>
+        <div class='p-t-5 p-l-4 p-r-4 p-b-5' style='
+            border-bottom: 1px solid gainsboro;
+            border-radius:0px;
+            padding-bottom:30px;'>
+            <div id='members'>
+            </div>
+        </div>
+
+        <div class='container text-center'>
+            <p class='fade'>You've reached the end!</p>
+        </div>
+    </div>
+
+    <!-- index.js -->
+    <script>
+        // developer mode if true
+        var testing = !false;
+        var testScene = 0;
+        var currentDate = new Date();
+
+        // update year    
+        if (new Date().getFullYear() !== 2024) {
+            document.querySelector("#currYear").innerText = new Date().getFullYear();
+        }
+
+        /** Loading animations **/
+
+        // check if browser supports css animations
+        function supportsCSSAnimations() {
+            var animation = false,
+                animationString = 'animation',
+                keyframeprefix = '',
+                domPrefixes = 'Webkit Moz O ms Khtml'.split(' '),
+                elm = document.createElement('div');
+
+            if (elm.style.animationName !== undefined) {
+                animation = true;
+            }
+
+            if (animation === false) {
+                for (var i = 0; i < domPrefixes.length; i++) {
+                    if (elm.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
+                        animationString = domPrefixes[i] + 'Animation';
+                        animation = true;
+                        break;
+                    }
+                }
+            }
+            // return result of animation
+            return animation;
+        }
+
+        // remove no js if js is supported
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, '');
+
+        // page load
+        document.addEventListener('DOMContentLoaded', function () {
+            var preloader = document.querySelector('.preloader');
+            if (preloader && testing === false) {
+                if (supportsCSSAnimations()) {
+                    document.getElementById('everything').style.display = 'none';
+                    fadeOut(preloader, 600, function () {
+                        preloader.parentNode.removeChild(preloader);
+                        document.getElementById('everything').style.display = '';
+                        goTo(0);
+                    });
+                } else {
+                    document.getElementById('everything').style.display = 'none';
+                    document.querySelector('.loader').style.display = 'none';
+                    document.querySelector('.fallback-text').style.display = 'block';
+                    setTimeout(function () {
+                        preloader.parentNode.removeChild(preloader);
+                        document.getElementById('everything').style.display = '';
+                        goTo(0);
+                    }, 100);
+                }
+            } else {
+                preloader.parentNode.removeChild(preloader);
+                document.getElementById('everything').style.display = '';
+            }
+        });
+
+        // fade out function (for aesthetics)
+        function fadeOut(element, speed, callback) {
+            var opacity = 1;
+            var interval = 50;
+            var duration = speed === 'slow' ? 600 : 300;
+            var gap = interval / duration;
+
+            function fade() {
+                opacity -= gap;
+                element.style.opacity = opacity;
+
+                if (opacity <= 0) {
+                    clearInterval(fading);
+                    element.style.display = 'none';
+                    if (typeof callback === 'function') {
+                        callback();
+                    }
+                }
+            }
+
+            var fading = setInterval(fade, interval);
+        }
+
+        // Function to get a random quote
+        function getRandomQuote() {
+            return quotes[Math.floor(Math.random() * quotes.length)];
+        }
+
+        // Function to set the random quote
+        function setRandomQuote() {
+            document.getElementById('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+        }
+
+        // Function to open the menu
+        function openMenu() {
+            document.getElementById('menu').classList.add('open');
+            document.getElementById('overlay').style.display = 'block';
+            setRandomQuote();
+        }
+
+        // Function to close the menu
+        function closeMenu() {
+            document.getElementById('menu').classList.remove('open');
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Add event listener to overlay to close menu when clicked
+        document.getElementById('overlay').onclick = closeMenu;
+
+        // for scroll based animations
+        function checkScroll() {
+            var fadeElements = document.querySelectorAll('.fade');
+
+            fadeElements.forEach(function (element) {
+                if (isInViewport(element)) {
+                    if (!element.classList.contains('faded-in')) {
+                        element.classList.add('faded-in');
+                    }
+                } else {
+                    element.classList.remove('faded-in');
+                }
+            });
+        }
+
+        // check if element is in viewport
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            return (
+                rect.bottom > 65 && // Make sure the bottom is greater than 65 to ensure it's not above the viewport
+                rect.right > 0 && // Make sure the right is greater than 0 to ensure it's not to the left of the viewport
+                rect.top < (window.innerHeight || document.documentElement.clientHeight) && // Make sure the top is less than the viewport height
+                rect.left < (window.innerWidth || document.documentElement.clientWidth) // Make sure the left is less than the viewport width
+            );
+        }
+
+        // Initial check when the page loads
+        checkScroll();
+
+        // Throttle scroll event to improve performance
+        var isScrolling = false;
+        window.addEventListener('scroll', function () {
+            if (!isScrolling) {
+                setTimeout(function () {
+                    checkScroll();
+                    isScrolling = false;
+                }, 100); // Debounce time
+                isScrolling = true;
+            }
+        });
+
+
+        // Navigation function
+        function goTo(section) {
+            window.scroll(0, 0);
+            setTimeout(function () {
+                checkScroll();
+            }, 100);
+            // For the first time on Khan Academy... xD
+            var scenes = document.querySelectorAll('.scene');
+            scenes.forEach(function (scene, i) {
+                if (i === section) {
+                    scene.style.display = 'block';
+                } else {
+                    scene.style.display = 'none';
+                }
+            });
+
+            // Remove 'active' class from all elements with class 'menu-link'
+            document.querySelectorAll('.menu-link').forEach(function (element) {
+                element.classList.remove('active');
+            });
+
+            // Add 'active' class to the element at the specified index
+            document.querySelectorAll('.menu-link')[section].classList.add('active');
+        }
+
+        if (testing === true) {
+            goTo(testScene);
+        }
+
+        var sortCriteria = '';
+        var sortOrder = 'asc';
+
+        function displayMembers() {
+            var membersDiv = document.getElementById('members');
+            membersDiv.innerHTML = '';
+            members.forEach(function (member) {
+                var hiddenLink = document.createElement('a');
+                hiddenLink.href = member.link;
+                hiddenLink.target = '_blank';
+                hiddenLink.className = 'customA';
+                var card = document.createElement('div');
+                card.className = 'card';
+                //card.classList.add('fade');
+                var finalLevel = '';
+                if (member.level === 0) {
+                    finalLevel = 'Beginner';
+                } else if (member.level === 1) {
+                    finalLevel = 'Intermediate';
+                } else {
+                    finalLevel = 'Advanced';
+                }
+                card.innerHTML = '<h3>' + member.name + '</h3>' +
+                    '<p>Level: ' + finalLevel + '</p>' +
+                    '<p class="big-points">' + (member.points) + '<br><span>Total Points</span></p>';
+                hiddenLink.appendChild(card);
+                membersDiv.appendChild(hiddenLink);
+            });
+        }
+
+
+
+        function updateSortText() {
+            var sortText = 'Current Sort: ';
+            if (sortCriteria) {
+                sortText += sortCriteria.charAt(0).toUpperCase() + sortCriteria.slice(1) + ' (' + sortOrder.toUpperCase() + ')';
+            } else {
+                sortText += 'None';
+            }
+            document.getElementById('current-sort').textContent = sortText;
+        }
+
+        // sorts members based on criteria
+        function sortMembers(criteria) {
+            if (sortCriteria === criteria) {
+                sortOrder = (sortOrder === 'asc') ? 'desc' : 'asc';
+            } else {
+                sortCriteria = criteria;
+                sortOrder = 'asc';
+            }
+
+            members.sort(function (a, b) {
+                if (a[criteria] < b[criteria]) return sortOrder === 'asc' ? -1 : 1;
+                if (a[criteria] > b[criteria]) return sortOrder === 'asc' ? 1 : -1;
+                return 0;
+            });
+
+            displayMembers();
+            updateSortText();
+
+            // Update button styles
+            updateButtonStyles(criteria);
+        }
+
+        // to change the up and down arrows on the buttons
+        function updateButtonStyles(activeButton) {
+            var buttons = document.getElementsByClassName('sort-button');
+            for (var i = 0; i < buttons.length; i++) {
+                var button = buttons[i];
+                if (button.getAttribute('data-sort') === activeButton) {
+                    button.classList.add('active');
+                    button.classList.remove(sortOrder === 'asc' ? 'desc' : 'asc');
+                    button.classList.add(sortOrder === 'asc' ? 'asc' : 'desc');
+                } else {
+                    button.classList.remove('active', 'asc', 'desc');
+                }
+            }
+        }
+
+        // Initial sort by 'level' descending (twice = descending, once = ascending)
+        sortMembers('level');
+        sortMembers('level');
+
+        // Event listeners for sorting buttons
+        document.getElementById('sort-name').addEventListener('click', function () {
+            sortMembers('name');
+        });
+
+        document.getElementById('sort-level').addEventListener('click', function () {
+            sortMembers('level');
+        });
+
+        document.getElementById('sort-points').addEventListener('click', function () {
+            sortMembers('points');
+        });
+
+        // show events ( info page )
+        function displayEvents() {
+            var eventsDiv = document.getElementById('events');
+            eventsDiv.innerHTML = '';
+
+            // loop through schedule from data.js
+            schedule.forEach(function (eventItem) {
+                var eventCard = document.createElement('div');
+                eventCard.className = 'event-card';
+
+                var breadcrumbClass = getEventStatus(eventItem, currentDate);
+                var breadcrumbText = getEventStatusText(eventItem, currentDate);
+
+                var breadcrumb = document.createElement('div');
+                breadcrumb.className = 'breadcrumb ' + breadcrumbClass;
+                breadcrumb.textContent = breadcrumbText;
+                eventCard.appendChild(breadcrumb);
+
+                var eventDetails = document.createElement('div');
+                eventCard.classList.add('fade');
+                // update the inner html of event details
+                eventDetails.innerHTML = '<h3>' + eventItem.event + '</h3>' +
+
+                    '<p class="description">' + (eventItem.desc || 'To Be Announced') + '</p>';
+                eventCard.appendChild(eventDetails);
+                // append individual event card to main events div
+                eventsDiv.appendChild(eventCard);
+            });
+        }
+
+        // gets status of event based on date
+        // only to edit the CSS class
+        function getEventStatus(eventItem, currentDate) {
+            var eventStartDate = new Date(eventItem.start);
+            var eventEndDate = new Date(eventItem.end);
+
+            if (currentDate < eventStartDate) {
+                return 'upcoming';
+            } else if (currentDate >= eventStartDate && currentDate <= eventEndDate) {
+                return 'current';
+            } else {
+                return 'past';
+            }
+        }
+
+        // same as getEventStatus()
+        // but is for displaying the text in the <div>, not for the CSS class
+        function getEventStatusText(eventItem, currentDate) {
+            var eventStartDate = new Date(eventItem.start);
+            var eventEndDate = new Date(eventItem.end);
+
+            if (currentDate < eventStartDate) {
+                return 'Upcoming Event';
+            } else if (currentDate >= eventStartDate && currentDate <= eventEndDate) {
+                return 'Current Event';
+            } else {
+                return eventItem.banner;
+            }
+        }
+
+        //  display events
+        displayEvents();
+
+        // to display projects
+        function displayProjects() {
+            var projectsDiv = document.getElementById('projects');
+            // Get search input and convert to lowercase
+            var searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+            projectsDiv.innerHTML = '';
+
+            projects.forEach(function (project) {
+                if (project.author.toLowerCase().includes(searchInput)) {
+                    // Find the corresponding author's details
+                    var authorDetails = findAuthorDetails(project.author);
+
+                    // Create project card HTML
+                    var card = document.createElement('div');
+                    card.className = 'event-card';
+
+                    card.innerHTML =
+                        "<h3>" + project.author + "</h3>" +
+                        '<p style="margin-bottom:10px;">' + project.name + '</p>' +
+
+                        '<div style="display:flex;justify-content:space-between;width:100%;"><a href="' + project.link + '" target="_blank"><button class="btn-secondary">Apply Now <i class="material-icons">open_in_new</i></button></a></div>';
+
+                    projectsDiv.appendChild(card);
+
+                }
+            });
+        }
+
+        // get author details from data.js
+        function findAuthorDetails(authorName) {
+            var member = members.find(function (member) {
+                return member.name === authorName;
+            });
+            return member ? member : {
+                name: 'Unknown',
+                team: 'Unknown',
+                level: 'Unknown',
+                points: 0,
+                link: '#'
+            };
+        }
+
+        // Find the event description based on event index
+        function findEventDesc(eventIndex) {
+            var event = schedule[eventIndex];
+            return event ? event.event : 'To Be Announced';
+        }
+
+        displayProjects();
+
+        /* for the fancy inputs, based on data-text attribute */
+        function createSpans() {
+            var labels = document.querySelectorAll('.form-d[data-text]');
+
+            labels.forEach(function (label) {
+                var text = label.getAttribute('data-text');
+                if (text) {
+                    label.innerHTML = ''; // Clear existing content inside label
+                    for (var i = 0; i < text.length; i++) {
+                        var span = document.createElement('span');
+                        span.style.transitionDelay = i * 50 + 'ms'; // Adjust transition delay
+                        span.textContent = text[i];
+                        label.appendChild(span);
+                    }
+                }
+            });
+        }
+
+        // call createSpans
+        createSpans();
+
+        // Function to update the notification
+        function updateNotification() {
+            var message = 'Applications are open';
+
+            // Iterate through the schedule
+            for (var i = 0; i < schedule.length; i++) {
+                var eventStart = new Date(schedule[i].start);
+                var eventEnd = new Date(schedule[i].end);
+
+                // Check if the current date is within the event range
+                if (currentDate >= eventStart && currentDate <= eventEnd) {
+                    message = 'Current event: ' + schedule[i].event;
+                    break;
+                }
+            }
+
+            // Update the #notif element
+            document.getElementById('notif').innerText = message;
+        }
+
+        // Call the function to update the notification
+        updateNotification();
+
+        // modals
+        // Get all the buttons that open modals
+        var openModalBtns = document.querySelectorAll(".open-modal-btn");
+
+        // Get all the close buttons
+        var closeBtns = document.querySelectorAll(".close-btn");
+
+        // Add event listener to each open modal button
+        openModalBtns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                var modalId = btn.getAttribute("data-modal");
+                var modal = document.getElementById(modalId);
+                modal.style.display = "block";
+            });
+        });
+
+        // test to open first one
+        /*var modalId = document.querySelectorAll(".open-modal-btn")[0].getAttribute("data-modal");
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";*/
+
+        // Sort the array by score in descending order
+        scores.sort(function (a, b) {
+            return b.score - a.score;
+        });
+
+        // Get the podium element
+        var podium = document.getElementById('podium');
+
+        // Create a podium item
+        var createPodiumItem = function (rank, item) {
+            var podiumItem = document.createElement('div');
+            podiumItem.classList.add('podium-item', rank);
+
+            var podiumImg = document.createElement('img');
+            podiumImg.src = item.mascot;
+
+            var podiumRank = document.createElement('div');
+            podiumRank.classList.add('podium-rank');
+            podiumRank.textContent = rank === 'first' ? '1' : rank === 'second' ? '2' : '3';
+
+            var podiumName = document.createElement('div');
+            podiumName.classList.add('podium-name');
+            podiumName.innerHTML = item.team + ":<br><br> " + item.score + ' total points';
+
+            // click event listener
+            podiumItem.addEventListener('click', function () {
+                window.open(item.homepage, '_blank'); // Open link in a new tab
+            });
+
+            podiumItem.appendChild(podiumImg);
+            podiumItem.appendChild(podiumRank);
+            podiumItem.appendChild(podiumName);
+
+            return podiumItem;
+        };
+
+        // first up is second, since podium is in 2-1-3 format
+        podium.appendChild(createPodiumItem('second', scores[1]));
+        // next is first place (in the middle)
+        podium.appendChild(createPodiumItem('first', scores[0]));
+        // and then third place
+        podium.appendChild(createPodiumItem('third', scores[2]));
+
+
+        // Add event listener to each close button
+        closeBtns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                var modal = btn.closest(".modal");
+                modal.style.display = "none";
+            });
+        });
+
+        // Add event listener to close the modal when clicking outside of it
+        window.addEventListener("click", function (event) {
+            // get all .modal elements
+            var modals = document.querySelectorAll(".modal");
+            // loop through modals
+            modals.forEach(function (modal) {
+                if (event.target == modal) {
+                    // hide them
+                    modal.style.display = "none";
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+
+        // Intersection Observer for card animations
+        const cards = document.querySelectorAll('.benefit-card');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('show');
+                    }, index * 150);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        cards.forEach(card => observer.observe(card));
+    </script>
+</body>
+
+</html>
